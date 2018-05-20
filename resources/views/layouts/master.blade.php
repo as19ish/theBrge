@@ -21,7 +21,7 @@
         
             <header class="main_menu_area">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" height="50px" width="150px"></a>
+                <a class="navbar-brand" href="{{route('home')}}"><img src="img/logo.png" alt="" height="50px" width="150px"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
@@ -34,16 +34,7 @@
                         <li class="nav-item"><a class="nav-link" href="{{route('about')}}">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{route('service')}}">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{route('portfolio')}}">Portfolio</a></li>
-                        <li class="nav-item dropdown submenu">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Blog
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li class="nav-item"><a class="nav-link" href="{{route('blogs')}}">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{route('blog')}}">Blog Details</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{route('elements')}}">Elements</a></li>
-                            </ul>
-                        </li>
+                      
                         <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">Contact</a></li>
                     </ul>
                 </div>
@@ -58,16 +49,16 @@
                     <div class="row footer_widget_inner">
                         <div class="col-lg-4 col-sm-6">
                             <aside class="f_widget f_about_widget">
-                                <img src="img/footer-logo.png" alt="">
-                                <p>Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum.</p>
+                                <img src="img/logo.png" alt="" height="150px" width="200px" style="filter: grayscale(100%);">
+                                <p>A Canadian based technology company helping people bring ideas to life</p>
                             </aside>
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <aside class="f_widget f_insta_widget">
                                 <div class="f_title">
-                                    <h3>Instagram</h3>
+                                   {{--  <h3>Instagram</h3> --}}
                                 </div>
-                                <ul>
+                                {{-- <ul>
                                     <li><a href="#"><img src="img/instagram/ins-1.jpg" alt=""></a></li>
                                     <li><a href="#"><img src="img/instagram/ins-2.jpg" alt=""></a></li>
                                     <li><a href="#"><img src="img/instagram/ins-3.jpg" alt=""></a></li>
@@ -76,7 +67,7 @@
                                     <li><a href="#"><img src="img/instagram/ins-6.jpg" alt=""></a></li>
                                     <li><a href="#"><img src="img/instagram/ins-7.jpg" alt=""></a></li>
                                     <li><a href="#"><img src="img/instagram/ins-8.jpg" alt=""></a></li>
-                                </ul>
+                                </ul> --}}
                             </aside>
                         </div>
                         <div class="col-lg-4 col-sm-6">
@@ -99,7 +90,7 @@
                 <div class="container">
                     <div class="float-sm-left">
                         <h5>
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">theBrge</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">theBrge</a>
 
                     </div>
                     <div class="float-sm-right">

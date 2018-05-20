@@ -10,8 +10,12 @@ Route::get('/portfolio','portfolioController@index')->name('portfolio');
 
 Route::get('/elements','elementsController@index')->name('elements');
 
-Route::get('/blog','blogController@index')->name('blogs');
+
 
 Route::get('/contact','contactController@index')->name('contact');
 
-Route::get('/single-blog','singleBlogController@index')->name('blog');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
