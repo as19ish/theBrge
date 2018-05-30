@@ -15,66 +15,19 @@
         <section class="service_feature">
             <div class="container">
                 <div class="row feature_inner">
+                    @foreach( App\Service::all() as $service)
                     <div class="col-lg-4 col-sm-6">
                         <div class="feature_item">
                             <div class="f_icon">
                                 <img src="img/icon/f-icon-1.png" alt="">
                             </div>
-                            <h4>Brand Identity</h4>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
+                            <h4>{{ucwords($service->name)}}</h4>
+                            <p>{{ucwords($service->description)}}</p>
                             <a class="more_btn" href="#">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="img/icon/f-icon-2.png" alt="">
-                            </div>
-                            <h4>Online Marketing</h4>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                            <a class="more_btn" href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="img/icon/f-icon-3.png" alt="">
-                            </div>
-                            <h4>Social Media</h4>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                            <a class="more_btn" href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="img/icon/f-icon-4.png" alt="">
-                            </div>
-                            <h4>Video Support</h4>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                            <a class="more_btn" href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="img/icon/f-icon-5.png" alt="">
-                            </div>
-                            <h4>Fast Support</h4>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                            <a class="more_btn" href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="img/icon/f-icon-6.png" alt="">
-                            </div>
-                            <h4>Download test</h4>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                            <a class="more_btn" href="#">Read More</a>
-                        </div>
-                    </div>
+                    @endforeach
+                    
                 </div>
             </div>
         </section>
@@ -84,7 +37,7 @@
         <section class="circle_chart_area">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="circle_progress circular style-polygon" data-percentage="75" data-thickness="3" data-reverse="true" data-empty-fill="transparent" data-start-color="#987dff" data-end-color="#7acaff">
                             <div class="circle_progress_inner">
                                 <strong></strong>
@@ -93,7 +46,7 @@
                             </div> 
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    {{-- <div class="col-lg-3 col-sm-6">
                         <div class="circle_progress circular style-polygon" data-percentage="83" data-thickness="3" data-reverse="true" data-empty-fill="transparent" data-start-color="#987dff" data-end-color="#7acaff">
                             <div class="circle_progress_inner">
                                 <strong></strong>
@@ -101,8 +54,8 @@
                                 <h4>Creativity</h4>
                             </div> 
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
+                    </div> --}}
+                    <div class="col-lg-4 col-sm-6">
                         <div class="circle_progress circular style-polygon" data-percentage="25" data-thickness="3" data-reverse="true" data-empty-fill="transparent" data-start-color="#987dff" data-end-color="#7acaff">
                             <div class="circle_progress_inner">
                                 <strong></strong>
@@ -111,7 +64,7 @@
                             </div> 
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="circle_progress circular style-polygon" data-percentage="95" data-thickness="3" data-reverse="true" data-empty-fill="transparent" data-start-color="#987dff" data-end-color="#7acaff">
                             <div class="circle_progress_inner">
                                 <strong></strong>
