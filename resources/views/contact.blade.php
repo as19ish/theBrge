@@ -39,9 +39,9 @@
                                 <h6>Say hello</h6>
                                 <h2>Get in touch, send us an e-mail or call us</h2>
                             </div>
-                            <p>Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum.</p>
-                            <a href="tel:+45237395593232"><h5>Call us now</h5></a>
-                            <a href="tel:+45237395593232"><h4>+452373 95593 232</h4></a>
+                            <p>Send us an email or call us to discuss your requirement. One of our partner will be available to help you out</p>
+                            <a href="tel:{{setting('phone.no')}}"><h5>Call us now</h5></a>
+                            <a href="tel:{{setting('phone.no')}}"><h4>{{setting('phone.no')}}</h4></a>
                         </div>
                     </div>
                 </div>
@@ -50,8 +50,8 @@
 
         <section class="contact_map_area">
             <div id="mapBox1" class="mapBox1 row m0" 
-                data-lat="40.701083" 
-                data-lon="-74.1522848" 
+                data-lat="{{setting('location.latitude')}}" 
+                data-lon="{{setting('location.longitude')}}" 
                 data-zoom="15" 
                 data-marker="" 
                 data-info=""
@@ -61,11 +61,11 @@
             <div class="map_location_box">
                 <div class="container">
                     <div class="map_l_box_inner">
-                        <div class="bd-callout">
-                            <h3>Gibraltar Office</h3>
-                            <p>Casemates Square, no253 <br /> United kingdom</p>
-                            <h4><a href="#">+453678 9283 559</a> <a href="#">contact@template.com</a></h4>
-                        </div>
+                         <div class="bd-callout">
+                        <h3>Canada Office</h3>
+                        <p>{{setting('contact.line1')}} <br>{{setting('contact.line2')}} <br /> Canada</p>
+                        <h4><a href="tel:{{setting('phone.no')}}">{{setting('phone.no')}}</a> <a target="_blank" href="mailto:{{setting('contact.email')}}">{{setting('contact.email')}}</a></h4>
+                    </div>
                     </div>
                 </div>
             </div>

@@ -220,36 +220,19 @@
                     <h2>We are young but bold</h2>
                 </div>
                 <div class="row feature_inner">
+                    @foreach($homeServices as $homeService)
                     <div class="col-lg-4 col-sm-6">
                         <div class="feature_item">
                             <div class="f_icon">
                                 <img src="img/icon/f-icon-1.png" alt="">
                             </div>
-                            <h4>{{ucwords('Website Development')}}</h4>
-                            <p>Fast and Effictive Web Development At Affordable Price</p>
+                            <h4>{{ucwords($homeService->name)}}</h4>
+                            <p>{{ucwords($homeService->description)}}</p>
                             <a class="more_btn" href="{{route('service')}}">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="img/icon/f-icon-2.png" alt="">
-                            </div>
-                            <h4>{{ucwords('Web Hosting')}}</h4>
-                            <p>Fully Supported And Customized Hosting With Web Optimization</p>
-                            <a class="more_btn" href="{{route('service')}}">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="img/icon/f-icon-3.png" alt="">
-                            </div>
-                            <h4>{{ucwords('App Development')}}</h4>
-                            <p>Custom App Design And Develompent With Ongoing</p>
-                            <a class="more_btn" href="{{route('service')}}">Read More</a>
-                        </div>
-                    </div>
+                    @endforeach
+                  
                 </div>
             </div>
         </section>

@@ -95,12 +95,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     </div>
                     <div class="float-sm-right">
                         <ul>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            
+                            <li><a href="{{setting('social-media.fb')}}"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="{{setting('social-media.tw')}}"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="{{setting('social-media.ig')}}"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="{{setting('social-media.ln')}}"><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>

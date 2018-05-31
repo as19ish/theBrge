@@ -20,7 +20,8 @@
                                 <h6>Discover the features</h6>
                                 <h2>We don’t hide, we stand tall in front of chalenge</h2>
                             </div>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis viverra a eget nisi. Aenean pellentesque elit vitae eros dignissim ultrices. </p>
+                            <p>We work to strive and grow. Starting from a team of 3 people, we have grown to a team of 7 individual with diverse backgrounds. With every new challenge we build a new relationship and friendship</p>
+                            <p>A company is define by its people. We are a team of 7 energetic and experienced individual with a common goal to bring ideas to life. Our expertise are growing and few key skill-set are: Java, PHP, Android, iOS, SQL, nodeJs etc</p>
                            {{--  <div class="c_video">
                                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=62QYQE6k7tg"><img src="img/icon/video-icon.png" alt="">See how we work </a>
                             </div> --}}
@@ -60,7 +61,7 @@
             </div>
         </section>
        
-        <section class="we_company_area p_100">
+        {{-- <section class="we_company_area p_100">
             <div class="container">
                 <div class="row company_inner">
                     <div class="col-lg-6">
@@ -70,21 +71,21 @@
                                 <h6>Discover the features</h6>
                                 <h2>We are a <span>CANADA</span> based Company</h2>
                             </div>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis viverra a eget nisi. Aenean pellentesque elit vitae eros dignissim ultrices. </p>
+                            <p>A Canadian based technology company helping people bring ideas to life</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="company_skill">
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellente sque sit am et tellus blandit. Etiam nec odio vestibul.</p>
+                            <p></p>
                             <div class="our_skill_inner">
-                                {{-- <div class="single_skill">
+                                <div class="single_skill">
                                     <h3>Development</h3>
                                     <div class="progress" data-value="70">
                                         <div class="progress-bar">
                                             <div class="progress_parcent"><span class="counter">70</span>%</div>
                                         </div>
                                     </div>
-                                </div> --}}
+                                </div>
                                 <div class="single_skill">
                                     <h3>Design</h3>
                                     <div class="progress" data-value="90">
@@ -122,7 +123,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         
         <section class="talk_area">
             <div class="container">
